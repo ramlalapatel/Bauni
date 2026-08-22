@@ -3,45 +3,47 @@ import { PolaroidPhoto, DiaryEntry } from '../types';
 export const INITIAL_PHOTOS: PolaroidPhoto[] = [
   {
     id: 'photo1',
-    title: 'That Unfiltered Laughter',
-    caption: "That evening we couldn't stop laughing",
-    // Beautiful warm illustrated placeholder evoking golden hour coaching days laughter
-    defaultImage: 'https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&w=1000&q=80',
+    title: 'Coaching Days Partner',
+    caption: 'Coaching days & endless laughs 🏫✨',
+    defaultImage: './images/photo1.jpg',
+    fallbackImage: 'https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&w=1000&q=80',
     rotation: -3,
     date: 'Coaching Days, 5:30 PM',
     tag: 'Unstoppable Giggles',
-    memoryStory: 'We were supposed to be solving mock exam question papers, but one silly joke set us off. We spent the entire break wiping tears of laughter by the staircase.'
+    memoryStory: 'From sitting together on the coaching benches trying not to burst out laughing in class, to racing down the stairs the second the bell rang. The best partner in crime!'
   },
   {
     id: 'photo2',
-    title: 'The Street Food Ritual',
-    caption: 'Golgappe runs after coaching 🥟💦',
-    defaultImage: 'https://images.unsplash.com/photo-1601050690597-df0568f70950?auto=format&fit=crop&w=1000&q=80',
+    title: 'Car Vibes & Casual Fits',
+    caption: 'Casual hangs, car rides & good vibes 🚗💫',
+    defaultImage: './images/photo2.jpg',
+    fallbackImage: 'https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=1000&q=80',
     rotation: 2.5,
-    date: 'Post-Class Rush',
-    tag: 'Extra Teekha Pani',
-    memoryStory: 'No coaching class was complete without racing to our favorite street vendor. "Bhaiya ek aur sukha puri dena!" was our sacred anthem.'
+    date: 'Unfiltered Days',
+    tag: 'Pure Comfort',
+    memoryStory: 'Zero awkwardness, 100% comfort. Just casual conversations, inside jokes that nobody else understands, and endless gossip.'
   },
   {
     id: 'photo3',
-    title: 'The Pink Floral Outfit',
-    caption: 'Momos + gossip = perfect combo',
-    // Delicate pink floral with maroon tones matching the user description
-    defaultImage: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=1000&q=80',
+    title: 'The Iconic Radiant Smile',
+    caption: 'That gorgeous Khushi smile ✨🌸',
+    defaultImage: './images/photo3.jpg',
+    fallbackImage: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=1000&q=80',
     rotation: -2,
-    date: 'Momos & Life Updates',
-    tag: 'Pink & Maroon Vibe',
-    memoryStory: 'Remember this day? Red spicy momos chutney, non-stop drama debriefs, and you looking effortlessly radiant in that pink floral fit.'
+    date: 'Pure Glow',
+    tag: 'Classic Bauni Vibe',
+    memoryStory: 'Effortlessly radiant! No matter how stressful coaching or life gets, that smile and infectious energy always light up the whole room.'
   },
   {
     id: 'photo4',
-    title: 'Unfiltered Us',
-    caption: 'Just us being us',
-    defaultImage: 'https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=1000&q=80',
+    title: 'The Ultimate Street Food Face-off',
+    caption: 'Momos vs Golgappe: The Sacred Ritual 🥟💥',
+    defaultImage: './images/photo4.jpg',
+    fallbackImage: 'https://images.unsplash.com/photo-1601050690597-df0568f70950?auto=format&fit=crop&w=1000&q=80',
     rotation: 3,
-    date: 'Forever Best Friends',
-    tag: 'Pure Gold',
-    memoryStory: 'Zero filter, 100% drama, endless support. Through all the stressful coaching tests and life changes, some things stay eternally rock solid.'
+    date: 'Every Evening Routine',
+    tag: 'Extra Teekha Pani',
+    memoryStory: 'Piping hot steamed momos with fiery red chutney on one side, crispy golgappe bursting with tangy spicy mint water on the other. Our post-class debate that always ended in ordering both!'
   }
 ];
 

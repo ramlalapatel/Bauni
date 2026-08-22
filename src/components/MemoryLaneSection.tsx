@@ -111,6 +111,11 @@ export const MemoryLaneSection: React.FC = () => {
                   <img
                     src={currentPhoto.customImage || currentPhoto.defaultImage}
                     alt={currentPhoto.caption}
+                    onError={(e) => {
+                      if (currentPhoto.fallbackImage && e.currentTarget.src !== currentPhoto.fallbackImage) {
+                        e.currentTarget.src = currentPhoto.fallbackImage;
+                      }
+                    }}
                     className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500"
                     loading="eager"
                   />
@@ -212,6 +217,11 @@ export const MemoryLaneSection: React.FC = () => {
                 <img
                   src={photo.customImage || photo.defaultImage}
                   alt={photo.caption}
+                  onError={(e) => {
+                    if (photo.fallbackImage && e.currentTarget.src !== photo.fallbackImage) {
+                      e.currentTarget.src = photo.fallbackImage;
+                    }
+                  }}
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform"
                 />
               </div>
@@ -251,6 +261,11 @@ export const MemoryLaneSection: React.FC = () => {
                 <img
                   src={selectedPhoto.customImage || selectedPhoto.defaultImage}
                   alt={selectedPhoto.caption}
+                  onError={(e) => {
+                    if (selectedPhoto.fallbackImage && e.currentTarget.src !== selectedPhoto.fallbackImage) {
+                      e.currentTarget.src = selectedPhoto.fallbackImage;
+                    }
+                  }}
                   className="w-full h-full object-cover"
                 />
               </div>

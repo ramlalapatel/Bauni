@@ -3,6 +3,7 @@ export interface PolaroidPhoto {
   title: string;
   caption: string;
   defaultImage: string;
+  fallbackImage?: string;
   customImage?: string;
   rotation: number;
   date?: string;
