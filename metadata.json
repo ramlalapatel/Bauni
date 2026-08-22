@@ -1,0 +1,6 @@
+{
+  "name": "Surprise For Khushi",
+  "description": "A warm, personal surprise website for Khushi (Bauni) featuring coaching memories, polaroid photo gallery, street food diaries, long-distance messages, and ambient music.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
